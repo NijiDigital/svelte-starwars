@@ -1,0 +1,12 @@
+html, body {
+    background-color: black;
+}
+
+nav ul a {
+	color: black;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: 'Star Wars', sans-serif;
+}
