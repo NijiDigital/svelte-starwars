@@ -1,12 +1,23 @@
 <script>
+  import { Route, Router } from 'svelte-navigator'
+  import MenuBar from './MenuBar.svelte'
   import Intro from './Intro.svelte'
+  import Planets from './Planets.svelte'
 </script>
 
 <div class="amber-text">
-    <h1 class="center-align">Star Wars</h1>
-    <main class="section amber lighten-4 black-text">
-        <Intro/>
-    </main>
+    <Router primary={false}>
+        <h1 class="center-align">Star Wars</h1>
+        <MenuBar/>
+        <main class="section amber lighten-4 black-text">
+            <Route path="/">
+                <Intro/>
+            </Route>
+            <Route path="planets">
+                <Planets/>
+            </Route>
+        </main>
+    </Router>
 </div>
 
 <style>
