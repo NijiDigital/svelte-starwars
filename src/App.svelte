@@ -1,7 +1,12 @@
+<script>
+  import Intro from './Intro.svelte'
+</script>
+
 <div class="amber-text">
-	<h1 class="center-align">Star Wars</h1>
-	<main class="section amber lighten-4 black-text">
-	</main>
+    <h1 class="center-align">Star Wars</h1>
+    <main class="section amber lighten-4 black-text">
+        <Intro/>
+    </main>
 </div>
 
 <style>
