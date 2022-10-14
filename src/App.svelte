@@ -4,6 +4,8 @@
   import Intro from './Intro.svelte'
   import Planets from './Planets.svelte'
   import Planet from './Planet.svelte'
+  import Films from './Films.svelte'
+  import Film from './Film.svelte'
 </script>
 
 <div class="amber-text">
@@ -20,6 +22,12 @@
             <Route path="planets/:id" let:params>
                 <Planet id="{params.id}"/>
             </Route>
+			<Route path="films">
+				<Films/>
+			</Route>
+			<Route path="films/:id" let:params>
+				<Film id="{params.id}"/>
+			</Route>
         </main>
     </Router>
 </div>

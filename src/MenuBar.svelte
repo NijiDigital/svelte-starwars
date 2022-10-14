@@ -11,6 +11,9 @@
             <li>
                 <Link to="planets">Planètes</Link>
             </li>
+            <li>
+                <Link to="films">Films</Link>
+            </li>
         </ul>
     </nav>
 </header>
