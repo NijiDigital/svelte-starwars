@@ -9,7 +9,7 @@
 </script>
 
 <div class="amber-text">
-    <Router primary={false}>
+    <Router primary={false} basepath="BASE_PATH">
         <h1 class="center-align">Star Wars</h1>
         <MenuBar/>
         <main class="section amber lighten-4 black-text">
