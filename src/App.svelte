@@ -3,6 +3,7 @@
   import MenuBar from './MenuBar.svelte'
   import Intro from './Intro.svelte'
   import Planets from './Planets.svelte'
+  import Planet from './Planet.svelte'
 </script>
 
 <div class="amber-text">
@@ -15,6 +16,9 @@
             </Route>
             <Route path="planets">
                 <Planets/>
+            </Route>
+            <Route path="planets/:id" let:params>
+                <Planet id="{params.id}"/>
             </Route>
         </main>
     </Router>
